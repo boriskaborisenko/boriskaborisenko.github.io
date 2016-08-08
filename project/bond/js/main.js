@@ -21,6 +21,7 @@ var player;
 function onYouTubeIframeAPIReady() {
 	var w = $(window).width();
 	if(w<1024){console.log('small');
+		$('.inputs').attr('type', 'number');
 		player = new YT.Player('player', {
         width: w-10,
         height: w/1.82,
