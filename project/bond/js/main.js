@@ -15,7 +15,8 @@ window.onresize = function(event) {
 
 
 ////video 27ixLv3Lw1M
-	
+
+var videoID = '-m6UKS1L0YQ';	
 var player;
 
 function onYouTubeIframeAPIReady() {
@@ -25,7 +26,7 @@ function onYouTubeIframeAPIReady() {
 		player = new YT.Player('player', {
         width: w-10,
         height: w/1.82,
-        videoId: '27ixLv3Lw1M',
+        videoId: videoID,
         playerVars: {
             color: 'white'
         },
@@ -38,9 +39,17 @@ function onYouTubeIframeAPIReady() {
 		player = new YT.Player('player', {
         width: 640,
         height: 360,
-        videoId: '27ixLv3Lw1M',
+        videoId: videoID,
         playerVars: {
-            color: 'white'
+            color: 'white',
+            controls:0,
+            rel:0,
+            modestbranding:0,
+            fs:0,
+            cc_load_policy:0,
+            showinfo:0,
+            disablekb:0,
+            autohide:0
         },
         events: {
             onReady: initialize
