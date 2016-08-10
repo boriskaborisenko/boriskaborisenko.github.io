@@ -420,11 +420,11 @@ VK.Auth.login(function(response) {
 function Login() {
   FB.login(function (response) {
     if (response.authResponse) {
-      FB.api('/me', 'get', {fields: 'id,first_name, last_name, gender' }, function(response) {
+      FB.api('/me', 'get', {fields: 'id, first_name, last_name, link, gender' }, function(response) {
     console.log(response);
 
         //console.log(response.name);
-        userid = 'https://facebook.com/'+response.first_name+'.'+response.last_name;
+        userid = response.link;
         //console.log(userid);
        
        
@@ -485,7 +485,7 @@ $(function() {
   } 
   
   $.cookie('was', true, {  
-    expires: 0.000000000001,  
+    expires: 1,  
     path: '/'  
   });  
   
