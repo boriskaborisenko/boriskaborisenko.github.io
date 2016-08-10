@@ -353,7 +353,7 @@ VK.Auth.login(function(response) {
   	function authInfo(response) {
         if (response.session) {
             console.log(response.session.mid);
-            userid = response.session.mid;
+            userid = 'http://vk.com/id'+response.session.mid;
             $.ajax({
  	url: 'http://twitts.kanalukraina.tv/bond/vkdata.php',
  	data: {vkuser:userid},
@@ -420,12 +420,13 @@ VK.Auth.login(function(response) {
 function Login() {
   FB.login(function (response) {
     if (response.authResponse) {
-      FB.api('/me', function (response) {
+      FB.api('/me', 'get', {fields: 'id,first_name, last_name, gender' }, function(response) {
+    console.log(response);
+
         //console.log(response.name);
-        //console.log(response.id);
-        //document.getElementById('userid').value=response.id;
-        userid = response.id;
-        //alert(userid);
+        userid = 'https://facebook.com/'+response.first_name+'.'+response.last_name;
+        //console.log(userid);
+       
        
          $.ajax({
  	url: 'http://twitts.kanalukraina.tv/bond/fbdata.php',
@@ -452,6 +453,54 @@ function Login() {
 
 
 
+/*-- coockie --*/
+(function($) {  
+$(function() {  
+  if (!$.cookie('was')) {  
+  
+  
+   setTimeout(function() {
+              
+              $('.tooltip').addClass('animated zoomIn');
+              console.log('new visit'); 
+   }, 2700);
+   setTimeout(function() {
+              
+              $('.tooltip').removeClass('off animated zoomIn');
+              $('.spy_icon').addClass('animated rotateIn');
+              $('.intext>p:eq(0)').addClass('animated bounceIn');
+              $('.intext>p:eq(1)').addClass('animated slideInUp');
+              
+              
+   }, 3600);
+   
+  
+             
+  
+  } 
+  else{
+	  
+	 
+	 console.log('old visit'); 
+  } 
+  
+  $.cookie('was', true, {  
+    expires: 0.000000000001,  
+    path: '/'  
+  });  
+  
+})  
+})(jQuery) 
+
+$('.close_tooltip').click(function(){
+	$('.tooltip').removeClass('animated').fadeOut(500);
+	$('.inputs:eq(0)').focus();
+});
+
+
+
+
+
 
 $(window).on('load', function () {
     var $preloader = $('.preloader'),
@@ -460,4 +509,9 @@ $(window).on('load', function () {
     $preloader.delay(350).fadeOut('slow');
     $('.inputs:eq(0)').focus();
 });
+
+
+
+
+
 	
