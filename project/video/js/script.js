@@ -19,12 +19,12 @@ function checkFormat() {
 var supportedVideoFormat = checkFormat();
 console.log(supportedVideoFormat);
 
-var video_tag = '<video playsinline muted loop poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid"></video>';
-var src = '<source src="http://apps.ua/video/animatic.'+supportedVideoFormat+'" type="video/'+supportedVideoFormat+'">';
+var video_tag = '<video playsinline loop muted poster="" id="bgvid"></video>';
+var src = '<source src="http://localhost:8080/inst.'+supportedVideoFormat+'" type="video/'+supportedVideoFormat+'">';
 $('.vid').empty().append(video_tag);
 $('#bgvid').empty().append(src);
 
-var audio_tag = '<audio id="petuh"><source  src="http://www.stephaniequinn.com/Music/Commercial%20DEMO%20-%2015.mp3" type="audio/mpeg"></audio>';
+var audio_tag = '<audio id="petuh"><source  src="http://localhost:8080/Cymbaly.mp3" type="audio/mpeg"></audio>';
 $('body').append(audio_tag);
 
 
@@ -68,7 +68,7 @@ pauseButton.addEventListener("click", function() {
 
 video.addEventListener('touchstart', function(e) {
 e.preventDefault();
-//video.play();
+video.play();
 })
 
 
@@ -101,24 +101,6 @@ $('.play_music').click(function(){
 
 
 
-/*      
-      
-      //var video = 'iNJdPyoqt8U';
-      var video='Ylj7prScpYc';
-
-
-
-
-
-
-one();
-
-$('.change_video').click(function(){
-	$('#video').fadeOut(900);
-	player.stopVideo();
-	two();
-	player.playVideo();
-});
 
 
 
@@ -127,102 +109,58 @@ $('.change_video').click(function(){
 
 
 
-function one(){     
-      
-      
-$('#video').YTPlayer({
-	mute:true,
-    fitToBackground: true,
-    videoId: video,
-    playerVars: {
-      modestbranding: 0,
-      autoplay: 1,
-      controls: 0,
-      showinfo: 0,
-      branding: 0,
-      rel: 0,
-      autohide: 1,
-      start: 59
-    },
-    callback: function() {events();}
-}); 
 
-var events = function(){
-player = $('#video').data('ytPlayer').player;
 
-//setTimeout(function(){player.pauseVideo();}, 5000);
-player.addEventListener('onStateChange', function(data){
-  console.log("Player State Change", data);
-});
-     
-     }
-      
- 
-     
-	         
-      
- }        
-        
-        
-       
-        
-        
-        
-function two(){     
-      
-      
-$('#video').YTPlayer({
-    fitToBackground: true,
-    mute:true,
-    videoId: video,
-    
-    playerVars: {
-	  modestbranding: 0,
-      autoplay: 1,
-      controls: 0,
-      showinfo: 0,
-      branding: 0,
-      rel: 0,
-      autohide: 1,
-      start: 90
-    },
-    callback: function() {events();}
-}); 
+function timing(){
+	//petro.play();
+	setTimeout(function(){
+		var quad_1 = new Vivus('quad_1', {type: 'scenario-sync', duration: 370, start: 'autostart', forceRender: false, dashGap: 120});
+		var quad_2 = new Vivus('quad_2', {type: 'scenario-sync', duration: 570, start: 'autostart', forceRender: false, dashGap: 120});
+		var quad_3 = new Vivus('quad_3', {type: 'scenario-sync', duration: 170, start: 'autostart', forceRender: false, dashGap: 120});
+		
+		var fullmap = new Vivus('fullmap', {type: 'scenario-sync', duration: 370, start: 'autostart', forceRender: false, dashGap: 20});
+		//video.pause();
+		$('.map_curves').fadeIn(2000);
+		$('.quad_1, .quad_2, .quad_3').fadeIn(2000);
+		console.log('pause 1');
+	}, 3000);
+}
 
-var events = function(){
-player = $('#video').data('ytPlayer').player;
-setTimeout(function(){$('#video').fadeIn(2000)}, 1000);
 
-//setTimeout(function(){player.pauseVideo();}, 5000);
-player.addEventListener('onStateChange', function(data){
-  console.log("Player State Change", data);
-});
-     
-     }
-      
- 
-     
-	         
-      
- }        
-            
-     
-     
-     
-    
-  */ 
-  
+function titleReg(){
+	//petro.play();
+	setTimeout(function(){
+		
+		$('.regio_title').addClass('animated slideInUp');
+		types();
+	}, 2000);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
  function types(){
-      $(".bottom_text").typed({
-        strings: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, saepe delectus possimus iste obcaecati reiciendis odio atque sunt ipsa nesciunt odit velit alias quas doloribus cum dolore sapiente? Asperiores, error! Lorem ipsum dolor sit amet, consectetur adipisicing elit." ," Placeat saepe corrupti nisi neque ipsam! Reprehenderit, delectus, dolorum, sunt, eos eum dolor enim nostrum consequatur aliquam nobis culpa corporis distinctio quas?"],
-        typeSpeed: 7
+      $(".text").typed({
+        strings: ["Region name ghfjsgjhdfg hgfkjdfhgkjdfhg dfhgkjdfhgkjdfhg"],
+        typeSpeed: 60
       });
   }
   
   
-  
+    
   
 
 	var hi = new Vivus('go', {type: 'scenario-sync', duration: 70, start: 'autostart', forceRender: false, dashGap: 120});
@@ -245,7 +183,8 @@ player.addEventListener('onStateChange', function(data){
 	setTimeout(function(){
 	  	//$('.trident').fadeOut(1000);
 	  	$('.trident_block').remove();
-	  	types();
+	  	timing();
+	  	titleReg();
 	  	
 	},7600);
 
@@ -260,14 +199,33 @@ $(document).mousemove(function(e){
         transZ = 0;
         
         rotation = (e.pageX/$(window).width()*90) - 45;
-        transX = (e.pageX/$(window).width()*50) - 10;
-        transY = (e.pageY/$(window).width()*50) - 10;
+        transX = (e.pageX/$(window).width()*20) - 10;
+        transY = (e.pageY/$(window).width()*20) - 10;
+        
+        transX2 = (e.pageX/$(window).width()*5) - 10;
+        transY2 = (e.pageY/$(window).width()*5) - 1;
+        
+        transX3 = (e.pageX/$(window).width()*50) - 1;
+        transY3 = (e.pageY/$(window).width()*50) - 10;
+        
         $(".pane").css('transform', 'perspective( 6600px ) rotateX(' + transY + 'deg)  translateX(' + transY + 'px) rotateY(' + transX + 'deg)  translateY(' + transX + 'px)  ') ;
+        
+         $(".pane_map").css('transform', 'perspective( 600px ) rotateX(' + transY2 + 'deg)  translateX(' + transY2 + 'px) rotateY(' + transX2 + 'deg)  translateY(' + transX2 + 'px)  ') ;
+         
+          $(".pane_boxes").css('transform', 'perspective( 1600px ) rotateX(' + transY3 + 'deg)  translateX(' + transY3 + 'px) rotateY(' + transX3 + 'deg)  translateY(' + transX3 + 'px)  ') ;
+        
+        
         
         $(".bottom_text").css('transform', 'perspective( 16600px ) rotateX(' + transY + 'deg)  translateX(' + transY + 'px) rotateY(' + transX + 'deg)  translateY(' + transX + 'px)  ') ;
         
         $(".text").css('transform', 'perspective( 16600px ) rotateX(' + transY + 'deg)  translateX(' + transY + 'px) rotateY(' + transY + 'deg)  translateY(' + transX + 'px)  ') ;
     });
 
+
+
+
+$('.next_scene').click(function(){
+	$('.scene').fadeOut(800);
+});
 
 

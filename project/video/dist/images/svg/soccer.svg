@@ -1,0 +1,17 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0;fill:none;stroke:#FF080F;stroke-miterlimit:10;}
+	.st1{opacity:0.2;fill:#FF080F; cursor:pointer;}
+	.st2{opacity:0.4;fill:#0008EB;cursor:pointer;}
+	.st3{opacity:0.6;fill:#4BFF75;cursor:pointer;}
+</style>
+<rect class="st0" width="600" height="400"/>
+
+<path id="point1" class="st2" d="M310.5,300c-41.4,0-75-33.6-75-75s33.6-75,75-75s75,33.6,75,75S351.9,300,310.5,300z"/>
+<path id="point2" class="st1" d="M310.5,353.5C239.6,353.5,182,295.9,182,225c0-70.9,57.6-128.5,128.5-128.5C381.4,96.5,439,154.1,439,225
+	C439,295.9,381.4,353.5,310.5,353.5z"/>
+
+<circle id="point3" class="st3" cx="310.5" cy="225" r="28.5"/>
+
+</svg>
