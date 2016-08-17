@@ -20,11 +20,11 @@ var supportedVideoFormat = checkFormat();
 console.log(supportedVideoFormat);
 
 var video_tag = '<video playsinline loop muted poster="" id="bgvid"></video>';
-var src = '<source src="http://localhost:8080/inst.'+supportedVideoFormat+'" type="video/'+supportedVideoFormat+'">';
+var src = '<source src="http://boriskaborisenko.github.io/project/video/inst.'+supportedVideoFormat+'" type="video/'+supportedVideoFormat+'">';
 $('.vid').empty().append(video_tag);
 $('#bgvid').empty().append(src);
 
-var audio_tag = '<audio id="petuh"><source  src="http://localhost:8080/Cymbaly.mp3" type="audio/mpeg"></audio>';
+var audio_tag = '<audio id="petuh"><source  src="http://boriskaborisenko.github.io/project/video/Cymbaly.mp3" type="audio/mpeg"></audio>';
 $('body').append(audio_tag);
 
 
