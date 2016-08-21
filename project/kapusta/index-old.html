@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content='true' name='HandheldFriendly'/>
+        <meta content='width' name='MobileOptimized'/>
+        <meta content='yes' name='apple-mobile-web-app-capable'/>
+        <title>Капуста у кишені. Онлайн-кредити на картку</title>
+
+		<!--fonts!-->
+        <link rel="stylesheet" property='stylesheet' href="site_templates/fonts/font-awesome-4.4.0/css/font-awesome.min.css" type="text/css" />
+
+        <!-- mystyle !-->
+        <link rel="stylesheet" property='stylesheet' href="site_templates/vis-front/css-grid/grid.css" type="text/css" />
+        <link rel="stylesheet" property='stylesheet' href="site_templates/jq-ui/jq-ui.css" type="text/css" />
+		<link rel="stylesheet" property='stylesheet' href="site_templates/js_plugins/dropzone/dropzone.css" type="text/css" />
+		<link rel="stylesheet" property='stylesheet' href="site_templates/js_plugins/arthurgouveia-prettyCheckable-d3413af/dist/prettyCheckable.css" type="text/css" />
+
+        <link rel="stylesheet" property='stylesheet' href="site_templates/css/style.css" type="text/css" />
+        <link rel="stylesheet" property='stylesheet' href="site_templates/css/additional.css" type="text/css" />
+        
+
+
+        <!-- jQuery -->
+        
+  <script>
+      
+      var glob_cred_CPROC=2.00;      
+      var glob_cred_CPROC0=5.00     
+      var glob_cred_SUMMIN=500.00     
+      var glob_cred_SUMMAX=2500.00     
+      var glob_cred_SUMMID=1500.00     
+      var glob_cred_SUMSTEP=50.00     
+      var glob_cred_SROKMIN=5.00     
+      var glob_cred_SROKMAX=30.00     
+      var glob_cred_SROKMID=18.00 
+          
+      	
+     var glob_main_photo_has = false;
+     var glob_main_photo_need = false;
+    </script>
+        
+        <script src="site_templates/vis-front/jquery.js"></script>
+    		<script src="site_templates/js/front_utils.js?v=2" type="text/javascript" charset="utf-8"></script>
+		    <script src="site_templates/js/credit_utils.js?v=2" type="text/javascript" charset="utf-8"></script>
+		    
+<script src="site_templates/js/ionslider.js"></script>
+<script src="site_templates/js/moment.js"></script>   
+        
+
+        <!--[if lt IE 9]>
+        	<link rel="stylesheet" property='stylesheet' href="site_templates/vis-front/ie/css/ie8.css" type="text/css" />
+            <script type="text/javascript" src="site_templates/vis-front/ie/js/plugins/rem.min.js"></script>
+            <script type="text/javascript" src="site_templates/vis-front/ie/js/plugins/respond.min.js"></script>
+            <script type="text/javascript" src="site_templates/vis-front/ie/js/plugins/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!--[if gte IE 9]>
+          <style type="text/css">
+            .gradient {
+               filter: none;
+            }
+          </style>
+        <![endif]-->
+
+
+    </head>
+<body>
+
+    <!--mobile_menu!-->
+    	<div class="mobile-container">
+        	<div class="mobile-inside">
+            	<div class="mobile-inside-container">
+					
+					<a class="mobile-nav-bt navicon x close active" onclick="MobileMenu.hide( $('#open-mob-menu') );" href="javascript:;"><span class="lines"></span></a>
+
+			    	<div class="menu">
+	    				<ul class="menu_list">
+
+              	  <li   class="menu_child">
+				    			<div class="logined no_name">
+				    				<div class="logined_avatar">
+				    					<img src="site_templates/images/00-ava.svg" alt="">
+				    				</div>
+                    <div class="logined_name"><a href="javascript:;">Леоненко Евген Миколайович</a></div>
+				    				<div class="id">id 1</div>
+				    			</div>
+				    		</li>       
+                <li class="menu_child"   >
+                  <a href="#" onclick="doAjRouteJSON('do/do_logout.php','','','','',''); return false;" class="menu_link">Вихід</a>
+                </li>
+                
+                <li class="menu_child" style="display:none;"><button type="button" data-popup data-target="#auth" class="transparent_btn">Увійти</button></li>
+
+              <li class="menu_child"><a href="https://ikapusta.com.ua/about-us" class="menu_link">Про нас</a></li><li class="menu_child"><a href="https://ikapusta.com.ua/how-it-works" class="menu_link">Як це працює?</a></li><li class="menu_child"><a href="https://ikapusta.com.ua/dovidka" class="menu_link">Довідка</a></li>                      
+	    				</ul>		
+	    			</div>
+            	</div>
+            </div>
+        </div>    	
+		<!--mobile_menu!-->
+
+    <!--ALL!-->
+    <div class="all">
+
+    	<!--header!-->
+    	<header class="">
+        
+      
+    		<div class="header_center">
+    			<div class="container">
+	    			<div class="row">
+	    				<div class="col-xs-6 header_center_left">
+	    					
+	    					
+	    					<div class="logo">
+	    						<a href="https://ikapusta.com.ua/">
+	    							<img src="site_templates/images/00-test.svg">
+	    						</a>
+	    					</div>
+	    					
+	    					
+	    					
+	    					<div class="timer">
+                  
+			    				<div class="timer_headline">укладено <span class="timer_val">2 688</span> угод на сумму:</div>
+			    				<div class="timer_row">
+			    					<div class="timer_container">
+			    						<!--<span class="triangle_shadow"></span>-->
+                      <div class="timer_col"><span class="timer_number disabled">0</span></div>
+                      <div class="timer_col"><span class="timer_number ">3</span></div>
+                      <div class="timer_col"><span class="timer_number ">0</span></div>
+                      <div class="timer_col"><span class="timer_number ">6</span></div>
+                      <div class="timer_col"><span class="timer_number ">8</span></div>
+                      <div class="timer_col"><span class="timer_number ">1</span></div>
+                      <div class="timer_col"><span class="timer_number ">7</span></div>
+                      <div class="timer_col"><span class="timer_number ">5</span></div>
+			    						<div class="clear"></div>
+			    					</div>
+			    					<span class="timer_type">грн.</span>
+			    				</div>
+			    			</div>
+	    				</div>
+	    				<div class="col-xs-6 header_center_right">
+	    					<div class="header_right clearfix">
+	    						
+	    						<!--<div class="lang">
+	    							<ul class="lang_list">
+                    <li class="lang_child"><a href="?CMD=set_lang&LANG=0" class="lang_link active">UA</a></li>
+	    							<li class="lang_child"><a href="?CMD=set_lang&LANG=1" class="lang_link">RU</a></li>  
+	    							</ul>	
+	    						</div>
+	    						<div class="clear"></div>-->
+	    						
+	    						
+	    						<div class="menu">
+	    							<ul class="menu_list">
+
+              <li class="menu_child"><a href="https://ikapusta.com.ua/about-us" class="menu_link">Про нас</a></li><li class="menu_child"><a href="https://ikapusta.com.ua/how-it-works" class="menu_link">Як це працює?</a></li><li class="menu_child"><a href="https://ikapusta.com.ua/dovidka" class="menu_link">Довідка</a></li>                      
+                    
+                    
+                    
+                       <!-- <li class="menu_child" ><button type="button" data-popup data-target="#auth" class="transparent_btn">Увійти</button></li>-->
+                      
+                           <li class="menu_child">
+          
+          <div class="logined">
+              <div class="logined_avatar">
+                <img src="site_templates/images/00-ava.svg" alt="">
+              </div>
+              <div class="logined_name"><a href="https://ikapusta.com.ua/credit-lk-personal-data">Konstaninopolsky ...</a></div> 
+               <i class="fa fa-angle-down toggle_drop"></i>
+              <div class="id">id 1743878434</div>
+              <div class="drop">
+                <ul class="drop_list">
+              <li class="drop_child"><a href="https://ikapusta.com.ua/credit-lk-personal-data" class="drop_link">Профіль</a></li><li class="drop_child"><a href="https://ikapusta.com.ua/credit-lk-document-list" class="drop_link">Документи</a></li><li class="drop_child"><a href="https://ikapusta.com.ua/credit-lk-credit-list" class="drop_link">Кредити</a></li><li class="drop_child"><a href="https://ikapusta.com.ua/credit-lk-transaction-list" class="drop_link">Транзакції</a></li><li class="drop_child"><a href="https://ikapusta.com.ua/new-pass" class="drop_link">Зміна пароля</a></li>                 
+                  <li class="drop_child">
+                    <a href="#" onclick="doAjRouteJSON('do/do_logout.php','','','','',''); return false;" class="drop_link">Вихід</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          
+           </li>         
+            
+
+                      
+	    							</ul>		
+	    						</div>
+	    						
+	    						<div class="lang">
+	    							<ul class="lang_list">
+                     <li class="lang_child"><a href="?CMD=set_lang&LANG=0" class="lang_link active">UA</a></li>
+	    							 <li class="lang_child"><a href="?CMD=set_lang&LANG=1" class="lang_link">RU</a></li>  
+	    							</ul>	
+	    						</div>
+	    						
+	    						<a id="open-mob-menu" class="mobile-nav-bt navicon" href="javascript:;"><span class="lines"></span></a>
+	    					
+	    					</div>
+	    				</div>	
+	    			</div>
+	    		</div>		
+    		</div>	
+    	</header>
+    	<!--header!-->
+		
+    		<!--page!-->
+		<div class="page main_page">
+  		
+     
+	   <div class="new_calc"> 
+    		<div class="container">
+      		
+      		<div class="calc_title"><h1>Онлайн кредиты на карту любого банка</h1></div>
+      		<div class="calc_subtitle"><h2>Предоставляем кредиты до 5000 гривен за 5 минут</h2></div>
+      		
+      		<div class="calc_sliders">  
+        		<div class="calc_one">
+          		<div class="calc_slider_title">Сколько денег Вам необходимо?</div>
+          		<div class="calc_slider_box">
+            		<div id="range_sum"></div>
+          		</div>
+        		</div>
+        		<div class="calc_one">
+          		<div class="calc_slider_title">На какой срок Вам необходимы деньги?</div>
+          		<div class="calc_slider_box">
+            		<div id="range_date"></div>
+          		</div>
+        		</div>
+      		</div>
+      		
+      		
+      		<div class="total_block"> 
+        		
+        		<div class="total_one">
+          		<div class="total_data"><div class="num_sum fix_1" id="yep">2 345</div><div class="cur_sum"><span>грн.</span></div></div>
+          		<div class="total_anno">Сумма кредита</div>
+        		</div>
+        		
+        		<div class="total_one">
+          		<div class="total_data"><div class="num_sum fix_1" id="back_date">02.07.2016</div></div>
+          		<div class="total_anno">Дата погашения</div>
+        		</div>
+        		
+        		
+        		<div class="total_one mb">
+          		<div class="total_data"><div class="num_sum fix_2" id="percent">2 345</div><div class="cur_sum"><span>грн.</span></div></div>
+          		<div class="total_anno">Сумма погашения</div>
+        		</div>
+        		
+        		
+        		
+        		
+        		<div class="total_one"><button type="submit" class="i_accept">Взяти кредит</button></div>
+      		</div>
+      		
+      		<div class="security_image">
+        		<div class="one_logo"><img src="site_templates/images/03-60.png"></div>
+        		<div class="one_logo"><img src="site_templates/images/02-60.png"></div>
+        		<div class="one_logo"><img src="site_templates/images/01-60.png"></div>
+        		<div class="one_logo"><img src="site_templates/images/04-60.png"></div>
+      		</div>
+      		
+    		</div>
+    </div>
+    
+     <!--<div class="terms">
+      
+        <div class="all_terms">
+          <div class="one_term t_r">
+            <div class="term_title fix_pad_r">Cума</div>
+            <div class="term_subtitle fix_pad_r">до</div>
+            <div class="term_num">5 000</div>
+            <div class="term_add fix_pad_r">гривень</div>
+          </div>
+          <div class="one_term t_l">
+            <div class="term_title fix_pad_l">Термiн</div>
+            <div class="term_subtitle fix_pad_l">до</div>
+            <div class="term_num">30</div>
+            <div class="term_add fix_pad_l">днiв</div>
+          </div>
+        </div>
+      
+    </div>-->
+	    	
+	   <div class="works_block"> 
+    		<div class="container">
+      		<div class="works_title">
+        		<h1>ЯК ЦЕ ПРАЦЮЄ</h1>
+        	</div>
+        	<div class="works_all">
+          	<div class="works_one">
+            	<div class="works_icon"><img src="site_templates/images/icons/one.svg" alt="" /></div>
+            	<div class="works_anno">Оформіть Заявку на кредит не виходячі із дому</div>
+          	</div>
+          	<div class="works_one">
+            	<div class="works_icon"><img src="site_templates/images/icons/two.svg" alt="" /></div>
+            	<div class="works_anno">Отримайте рішення щодо надання кредиту</div>
+          	</div>
+          	<div class="works_one">
+            	<div class="works_icon"><img src="site_templates/images/icons/three.svg" alt="" /></div>
+            	<div class="works_anno">Отримайте гроші на карту будь-якого банку України</div>
+          	</div>
+        	</div>
+    		</div>
+    </div>
+    
+   
+	   
+	   <div class="need">
+  	   <div class="container">
+    	   <div class="need_all">
+      	   <div class="need_one n_l">
+        	   <div class="need_banner"></div>
+      	   </div>
+      	   <div class="need_one n_r">
+        	   <div class="need_title">
+          	   <h1>От вас необходимо</h1>
+        	   </div>
+        	   <div class="need_anno">
+          	   <ul>
+          	    <li><div class="need_icon"></div> <div class="need_anno">Паспорт та ІПН</div></li>
+          	    <li><div class="need_icon"></div> <div class="need_anno">Телефон та е-mail</div></li>
+          	    <li><div class="need_icon"></div> <div class="need_anno">Банківська картка</div></li>
+          	   </ul>
+        	   </div>
+      	   </div>
+    	   </div>
+  	   </div>
+	   </div>
+	   
+	   <div class="pluses">
+  	   <div class="container">
+    	   <div class="all_pluses">
+      	   
+      	   <div class="one_plus">
+        	   <div class="plus_icon"><img src="site_templates/images/icons/20.svg" alt="" /></div>
+        	   <div class="plus_anno">
+          	   <div class="plus_title">Всего 20 минут</div>
+          	   <div class="plus_desc">Принятие решения за 20 минут</div>
+        	   </div>
+      	   </div>
+      	   
+      	   <div class="one_plus">
+        	   <div class="plus_icon"><img src="site_templates/images/icons/online.svg" alt="" /></div>
+        	    <div class="plus_anno">
+          	   <div class="plus_title">Полностью Online</div>
+          	   <div class="plus_desc">Вам не нужно посещать офис для оформления</div>
+        	   </div>
+      	   </div>
+      	   
+      	   <div class="one_plus">
+        	   <div class="plus_icon"><img src="site_templates/images/icons/back_time.svg" alt="" /></div>
+        	   <div class="plus_anno">
+          	   <div class="plus_title">Досрочное погашение</div>
+          	   <div class="plus_desc">Платите меньше при досрочном погашении</div>
+        	   </div>
+      	   </div>
+      	   
+      	   <div class="one_plus">
+        	   <div class="plus_icon"><img src="site_templates/images/icons/percent.svg" alt="" /></div>
+        	   <div class="plus_anno">
+          	   <div class="plus_title">Без комиссии за оформление</div>
+          	   <div class="plus_desc">Мы не берём оплату за оформление кредита</div>
+        	   </div>
+      	   </div>
+      	   
+      	   <div class="one_plus">
+        	   <div class="plus_icon"><img src="site_templates/images/icons/long.svg" alt="" /></div>
+        	   <div class="plus_anno">
+          	   <div class="plus_title">Автоматическая пролонгация</div>
+          	   <div class="plus_desc">Продлевайте кредит оплачивая лишь проценты</div>
+        	   </div>
+      	   </div>
+      	   
+      	   <div class="one_plus">
+        	   <div class="plus_icon"><img src="site_templates/images/icons/acc.svg" alt="" /></div>
+        	    <div class="plus_anno">
+          	   <div class="plus_title">Личный кабинет</div>
+          	   <div class="plus_desc">  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        	   </div>
+      	   </div>
+      	   
+      	   <div class="one_plus">
+        	   <div class="plus_icon"><img src="site_templates/images/icons/moneyback.svg" alt="" /></div>
+        	   <div class="plus_anno">
+          	   <div class="plus_title">Возврат кредита</div>
+          	   <div class="plus_desc"> Через личный кабинет, терминалы, отделения банков.</div>
+        	   </div>
+      	   </div>
+      	   
+      	  
+      	   
+      	   
+      	   
+    	   </div>
+  	   </div>
+	   </div>
+	   
+	  
+
+	   </div>
+	   <!--page!--> 	
+
+
+    
+    	<div class="empty_footer"></div>
+    </div>
+    <!--ALL!-->
+
+    <footer>
+    	<div class="container footer_container">
+    		<div class="row">
+    			<div class="col-xs-3 footer_col">
+					<div class="copyright">iRediska &copy; 2016</div>
+	    			<!--<div class="devel">Designed by: <a href="http://vis-design.com" rel="nofollow" target="_blank">VIS-A-VIS</a></div>-->
+	    			<div class="devel">Developed by: <a href="http://webolla.com" rel="nofollow" target="_blank">Webolla</a></div>
+    			</div>
+    			<div class="col-xs-3 footer_col">
+					<div class="footer_menu">
+		    			<ul class="footer_menu_list">
+  		    			<li class="footer_menu_child"><a href="https://ikapusta.com.ua/umovi-kredituvannya" class="footer_menu_link">Умови користування</a></li>
+              <li class="footer_menu_child"><a href="https://ikapusta.com.ua/kontakti" class="footer_menu_link">Контакти</a></li>                             
+		    			</ul>		
+		    		</div>	
+    			</div>
+    			<div class="col-xs-3 footer_col">
+    				<div class="footer_tel">
+	    				<p>Служба підтримки:</p>
+	    				<span>+38 (044) 338-07-79</span>
+	    			</div>    				<div class="footer_tel">
+	    				<p>Час роботи: з 9:00 до 18:00</p>
+	    			</div>
+    			</div>
+				
+
+    			<div class="col-xs-3 footer_col">
+    				
+    				<div class="feedback_container">
+						<div class="dropdown">
+							<div data-dropdown class="feedback_toggle"><span class="feedback_toggle_text">Маєте пропозиції чи скарги?</span></div>
+							<div class="dropdown-menu">
+								<div class="feedback">
+									<span class="triangle_shadow"></span>
+									<div class="feedback_headline">Напишіть нам</div>
+									<form  name="napishit_nam" id="napishit_nam" onsubmit="if (!Check_NapishitNam(this)){ return false;} var parstr = $('#napishit_nam').serialize();  doAjRouteJSON('do/do_napishit_nam.php','do_napishit_nam_res','&'+parstr,'','',''); return false;">
+										<div class="form_row">
+											<input type="text" name="NAME" placeholder="Ваше імя">
+										</div>
+										<div class="form_row">
+											<input type="text"  name="EMAIL" placeholder="Ваша пошта">
+										</div>
+										<div class="form_row">
+											<textarea  name="TEXT" placeholder="Текст повідомлення"></textarea>
+										</div>
+										<div class="form_row">
+											<input class="captca-code" type="text"  name="CAPTCHA" placeholder="Код" title="Код із зображення">
+                      <img id="capcha1" class="captca-img" src="site_templates/captcha.php"/><a href="#" onclick="document.getElementById('capcha1').src=document.getElementById('capcha1').src; return false;">інше зображення</a>
+										</div>
+										<div class="form_row">
+											<button id="napishit_nam_submit_btn" type="submit" class="i_accept">Відправити</button>
+                      <span id="do_napishit_nam_res"></span>
+										</div>
+                    <input type="hidden" name="CMS_TOKEN" value="27e1615212f3c6ea846ed6c412df1361ce97f006ee20bb5aa2483a3b61d5cadd" />
+									</form>
+								</div>
+							</div>		
+						</div>	
+					</div>
+					<div class="clear"></div>
+					<div class="social">
+	    				<p>Ми в соціальних мережах:</p>
+	    				<ul class="social_list">
+	    					
+	    					<li class="social_child"><a href="#" class="soc_icon trans1"><img src="site_templates/images/icons/fb_w.svg" alt="" /></a></li>
+	    					<li class="social_child"><a href="#" class="soc_icon icon_vk trans1"><img src="site_templates/images/icons/vk_w.svg" alt="" /></a></li>
+	    					<li class="social_child"><a href="#" class="soc_icon icon_od trans1"><img src="site_templates/images/icons/ok_w.svg" alt="" /></a></li>
+	    					
+	    				</ul>
+	    			</div>
+    			</div>
+	    	</div>
+
+    	</div>
+    </footer>
+
+    
+ 
+
+    <!--popup!-->
+    <div id="reg_complate" class="popup-container info-popup">
+        <div class="popup">
+        	<a href="javascript;;" data-popup-close class="popup-close small"></a>
+            <div class="container">
+                <div class="popup-content">
+
+                	<div class="popup_icon">
+                		<div class="popup_icon_cell">
+                			<img src="site_templates/images/check_icon.png" width="50" height="41" alt="">
+                		</div>
+                	</div>
+
+                	<div class="popup_small_title">Вітаємо!<br>Ви успішно зареєструвались.</div>
+					
+					<div class="popup_text">
+						<p>Через 5 сек вас автоматично переведуть в особистий кабінет.</p>
+					</div>
+
+				</div>
+            </div>
+        </div>    
+    </div>
+
+     <!--popup!-->
+    <div id="sms_input" class="popup-container info-popup">
+        <div class="popup">
+        	<a href="javascript;;" data-popup-close class="popup-close small"></a>
+            <div class="container">
+                <div class="popup-content">
+
+                	<div class="popup-article">
+						<div class="popup_text">
+              <p>Введiть код підтвердження з&nbsp;СМС повідомлення:</p>
+
+						</div>
+
+						<form name="sms_form" disable_controls="#sms_form_btn_next" class="center" method="post" id="sms_form" onsubmit="FormDisable('sms_form'); var parstr = $('#sms_form').serialize(); doAjRouteJSON('do/do_sms_confirm.php','sms_res','&'+parstr,'','',''); return false;">
+							<input name="SMS" type="text" id="sms-input">
+						<div class="popup_btn">
+							<button type="submit" id="sms_form_btn_next" class="submit_btn">ПРОДОВЖИТИ</button>
+              <span id="sms_res"></span>
+						</div>
+            <input type="hidden" name="CMS_TOKEN" value="27e1615212f3c6ea846ed6c412df1361ce97f006ee20bb5aa2483a3b61d5cadd" />
+						</form>
+					</div>		
+
+				</div>
+            </div>
+        </div>    
+    </div>
+    
+    
+
+         
+    
+
+	<!-- plugins !-->
+	<script src="site_templates/jq-ui/jq-ui.js"></script>
+	<script src="site_templates/js_plugins/jquery.selectbox-0.2/js/jquery.selectbox-0.2.js"></script>
+	<script src="site_templates/js_plugins/arthurgouveia-prettyCheckable-d3413af/dist/prettyCheckable.min.js"></script>
+
+	<script src="site_templates/vis-front/plugins.js"></script>
+	<script src="site_templates/vis-front/scripts/Input.js"></script>
+	<script src="site_templates/vis-front/scripts/Footer.js"></script>
+	<script src="site_templates/vis-front/scripts/Popup.js"></script>
+	<script src="site_templates/vis-front/scripts/MobileMenu.js"></script>
+	<script src="site_templates/vis-front/scripts/ToolTip.js"></script>
+
+      <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="site_templates/lightGal/css/lightgallery.css" /> 
+    <script src="site_templates/lightGal/js/lightgallery.js"></script>
+
+      <!-- lightgallery plugins -->
+    <script src="site_templates/lightGal/js/lg-thumbnail.js"></script>
+    <script src="site_templates/lightGal/js/lg-fullscreen.js"></script>
+
+	<script src="site_templates/js/app.js"></script>
+
+		<script type="text/javascript" src="site_templates/jsSHA/src/sha.js"></script>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script type="text/javascript">
+			<!--
+			/* String helper needed to make the giant strings needed for SHA-384 and SHA-512 large test case */
+			String.prototype.repeat = function(times) {
+			   return (new Array(times + 1)).join(this);
+		}
+      -->
+   </script>   
+	<!-- myscript !-->
+	<script src="site_templates/vis-front/script.js"></script>
+    
+    
+   
+ <script>
+w = $(window).width();
+if(w>767){
+  grid_num_one = 6;
+  grid_num_two = 5;
+}else{
+  grid_num_one = 4;
+  grid_num_two = 5;
+}
+    
+var $today = moment().calendar(), 
+$range_sum = $("#range_sum"),
+$range_date = $("#range_date"),
+$date = $("#back_date"),
+$total = $("#yep"),
+$percent = $("#percent");
+
+var track = function (data) {
+$total.html(data.from);
+var $total_sum = data.from;
+$percent.html( Math.ceil($total_sum*72.5/366+$total_sum) );
+
+};
+
+var trackDay = function (data) {
+var now = data.from;
+var a = moment(); 
+var b = a.add(now, 'days'); 
+var res = a.format('DD.MM.Y');
+$date.html(res);
+};
+
+$range_sum.ionRangeSlider({
+     type: "single",
+     min: 500,
+     max: 5000,
+     from: 2750,
+     step: 50,
+     postfix: " грн.",
+     grid: true,
+     grid_num: grid_num_one,
+     onStart: track,
+     onChange: track,
+     onFinish: track,
+     onUpdate: track
+});
+                                        
+$range_date.ionRangeSlider({
+     type: "single",
+     min: 5,
+     max: 30,
+     from: 10,
+     step: 1,
+     postfix: " дн.",
+     grid:true,
+     grid_num: grid_num_two,
+     onStart: trackDay,
+     onChange: trackDay,
+     onFinish: trackDay,
+     onUpdate: trackDay
+});
+</script>   
+
+
+
+  
+
+	
+</body>
+</html>
