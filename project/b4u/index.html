@@ -65,7 +65,7 @@
 
 
     </head>
-
+<body>
     <!--mobile_menu!-->
     	<div class="mobile-container">
         	<div class="mobile-inside">
@@ -79,7 +79,7 @@
               	  <li style="display:none;"  class="menu_child">
 				    			<div class="logined no_name">
 				    				<div class="logined_avatar">
-				    					<img src="site_templates/images/logined_avatar.png" width="37" height="33" alt="">
+				    					<img src="http://www.istockphoto.com/static/images/banshee/avatar-placeholder.svg" width="37" height="33" alt="">
 				    				</div>
                     <div class="logined_name"><a href="javascript:;"></a></div>
 				    				<div class="id">id 0</div>
@@ -89,7 +89,24 @@
                   <a href="#" onclick="doAjRouteJSON('do/do_logout.php','','','','',''); return false;" class="menu_link">Вихід</a>
                 </li>
                 
-                <li class="menu_child" ><button type="button" data-popup data-target="#auth" class="transparent_btn">Увійти</button></li>
+                <!--<li class="menu_child" ><button type="button" data-popup data-target="#auth" class="transparent_btn">Увійти</button></li>-->
+                
+                <li class="menu_child"> 
+                 <div class="logined">
+              <div class="logined_avatar">
+                <img src="http://www.istockphoto.com/static/images/banshee/avatar-placeholder.svg" width="37" height="33" alt="">
+              </div>
+              <div class="logined_name"><a href="https://ikapusta.com.ua/credit-lk-personal-data">Konstaninopolsky ...</a></div> <i class="fa fa-angle-down toggle_drop"></i>
+              <div class="id">id 183490853455</div>
+              <div class="drop">
+                <ul class="drop_list">
+              <li class="drop_child"><a href="https://ikapusta.com.ua/credit-lk-personal-data" class="drop_link">Профіль</a></li><li class="drop_child"><a href="https://ikapusta.com.ua/credit-lk-document-list" class="drop_link">Документи</a></li><li class="drop_child"><a href="https://ikapusta.com.ua/credit-lk-credit-list" class="drop_link">Кредити</a></li><li class="drop_child"><a href="https://ikapusta.com.ua/credit-lk-transaction-list" class="drop_link">Транзакції</a></li><li class="drop_child"><a href="https://ikapusta.com.ua/new-pass" class="drop_link">Зміна пароля</a></li>                 
+                  <li class="drop_child">
+                    <a href="#" onclick="doAjRouteJSON('do/do_logout.php','','','','',''); return false;" class="drop_link">Вихід</a>
+                  </li>
+                </ul>
+              </div>
+            </div></li>
 
               <li class="menu_child"><a href="https://ikapusta.com.ua/about-us" class="menu_link">Про нас</a></li><li class="menu_child"><a href="https://ikapusta.com.ua/how-it-works" class="menu_link">Як це працює?</a></li><li class="menu_child"><a href="https://ikapusta.com.ua/dovidka" class="menu_link">Запитання та відповіді</a></li>                      
 	    				</ul>		
@@ -115,19 +132,30 @@
 	    							<img src="site_templates/images/00-test.svg">
 	    						</a>
 	    					</div>
+	    				<!--TIMER START-->
 	    					<div class="timer">
                   
-			    				<div class="timer_headline">укладено <span class="timer_val">3 454</span> угод на сумму:</div>
+                  <div class="mycounter">
+                    <div class="c1"><div class="inc1">4 615 550<span>грн.</span></div></div>
+                    <div class="c2">Выдано кредитов</div>
+                  </div>
+                  
+			    				<!--<div class="timer_headline">укладено <span class="timer_val">3 454</span> угод на сумму:</div>
 			    				<div class="timer_row">
 			    					<div class="timer_container">
-			    						<!--<span class="triangle_shadow"></span>-->
-                      <div class="timer_col"><span class="timer_number disabled">0</span></div><div class="timer_col"><span class="timer_number ">4</span></div><div class="timer_col"><span class="timer_number ">2</span></div><div class="timer_col"><span class="timer_number ">7</span></div><div class="timer_col"><span class="timer_number ">5</span></div><div class="timer_col"><span class="timer_number ">1</span></div><div class="timer_col"><span class="timer_number ">5</span></div><div class="timer_col"><span class="timer_number ">0</span></div>
+			    						<div class="timer_col"><span class="timer_number disabled">0</span></div><div class="timer_col"><span class="timer_number ">4</span></div><div class="timer_col"><span class="timer_number ">2</span></div><div class="timer_col"><span class="timer_number ">7</span></div><div class="timer_col"><span class="timer_number ">5</span></div><div class="timer_col"><span class="timer_number ">1</span></div><div class="timer_col"><span class="timer_number ">5</span></div><div class="timer_col"><span class="timer_number ">0</span></div>
 			    						<div class="clear"></div>
 			    					</div>
 			    					<span class="timer_type">грн.</span>
-			    				</div>
+			    				</div>-->
 			    			</div>
+	    				<!--timer end-->
+	    				
 	    				</div>
+	    				
+	    				
+	    				
+	    				
 	    				<div class="col-xs-6 header_center_right">
 	    					<div class="header_right clearfix">
 	    						<!--<div class="lang">
@@ -142,13 +170,13 @@
 
               <li class="menu_child"><a href="https://ikapusta.com.ua/about-us" class="menu_link">Про нас</a></li><li class="menu_child"><a href="https://ikapusta.com.ua/how-it-works" class="menu_link">Як це працює?</a></li><li class="menu_child"><a href="https://ikapusta.com.ua/dovidka" class="menu_link">Запитання та відповіді</a></li>                      
                       
-                     <li class="menu_child"><button type="button" data-popup data-target="#auth" class="transparent_btn" onclick="ga('send', 'event', 'Main Page', 'Uviyti', 'Button');">Особистий кабінет</button></li>
+                     <!--<li class="menu_child"><button type="button" data-popup data-target="#auth" class="transparent_btn" onclick="ga('send', 'event', 'Main Page', 'Uviyti', 'Button');">Особистий кабінет</button></li>-->
                      
-          <!--<li class="menu_child">
+          <li class="menu_child">
           
           <div class="logined">
               <div class="logined_avatar">
-                <img src="site_templates/images/00-ava.svg" alt="">
+                <img src="http://www.istockphoto.com/static/images/banshee/avatar-placeholder.svg" alt="">
               </div>
               <div class="logined_name"><a href="https://ikapusta.com.ua/credit-lk-personal-data">Konstaninopolsky ...</a></div> 
                <i class="fa fa-angle-down toggle_drop"></i>
@@ -163,15 +191,15 @@
               </div>
             </div>
           
-           </li> -->
+           </li> 
                       
 	    							</ul>		
 	    						</div>
 	    						
 	    						<div class="lang">
 	    							<ul class="lang_list">
-                    <li class="lang_child"><a href="?CMD=set_lang&LANG=0" class="lang_link active">Укр</a></li>
-	    								<li class="lang_child"><a href="?CMD=set_lang&LANG=1" class="lang_link">Рус</a></li>  
+                    <li class="lang_child"><a href="?CMD=set_lang&LANG=0" class="lang_link active">UA</a></li>
+	    								<li class="lang_child"><a href="?CMD=set_lang&LANG=1" class="lang_link">RU</a></li>  
 	    							</ul>	
 	    						</div>
 	    						
@@ -338,13 +366,13 @@
         	   </div>
       	   </div>
       	   
-      	   <!--<div class="one_plus">
+      	   <div class="one_plus">
         	   <div class="plus_icon"><img src="site_templates/images/icons/percent.svg" alt="" /></div>
         	   <div class="plus_anno">
           	   <div class="plus_title">Без комиссии за оформление</div>
           	   <div class="plus_desc">Мы не берём оплату за оформление кредита</div>
         	   </div>
-      	   </div>-->
+      	   </div>
       	   
       	   <div class="one_plus">
         	   <div class="plus_icon"><img src="site_templates/images/icons/long.svg" alt="" /></div>
@@ -732,13 +760,17 @@
     
        
  <script>
+   
+  
+   
 w = $(window).width();
 if(w>767){
-  grid_num_one = 6;
+  grid_num_one = 3;
   grid_num_two = 5;
 }else{
-  grid_num_one = 4;
+  grid_num_one = 5;
   grid_num_two = 5;
+  
 }
     
 var $today = moment().calendar(), 
@@ -753,6 +785,24 @@ $total.html(data.from);
 var $total_sum = data.from;
 $percent.html( Math.ceil($total_sum*72.5/366+$total_sum) );
 
+
+   $style = $(".irs-single").attr('style');
+
+  if($total_sum>1999 && $total_sum<2999){
+   $("#rating").attr('style', $style).removeClass('off');
+   $("#cred_num").empty().html(1);
+  }
+  else if($total_sum>2999 && $total_sum<3999){
+   $("#rating").attr('style', $style);
+   $("#cred_num").empty().html(2); 
+  }
+  else if($total_sum>=3999){
+   $("#rating").attr('style', $style);
+   $("#cred_num").empty().html(3); 
+  }else{
+    $("#rating").addClass('off'); 
+  }
+
 };
 
 var trackDay = function (data) {
@@ -763,12 +813,14 @@ var res = a.format('DD.MM.Y');
 $date.html(res);
 };
 
+
+
 $range_sum.ionRangeSlider({
      type: "single",
      min: 500,
      max: 5000,
-     from: 2750,
-     step: 50,
+     from: 950,
+     step: 25,
      postfix: " грн.",
      grid: true,
      grid_num: grid_num_one,
@@ -792,10 +844,11 @@ $range_date.ionRangeSlider({
      onFinish: trackDay,
      onUpdate: trackDay
 });
+ $('span.js-irs-0>span.irs').append('<span id="rating" class="irs-rating off"><span class="rating_text">Доступно после <span id="cred_num">X</span>-го кредита</span></span>');
 </script>     
 
   
-<body>
+
 	
 </body>
 </html>
