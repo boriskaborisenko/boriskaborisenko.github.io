@@ -5,6 +5,13 @@
     <title>Bot Github</title>
 </head>
 <body>
-  test
+ <script>
+  var x = new XMLHttpRequest();
+  x.open("GET", "/echo/json/", true);
+  x.onload = function (){
+    alert( x.responseText);
+   }
+  x.send(null);
+ </script>
 </body>
 </html>
