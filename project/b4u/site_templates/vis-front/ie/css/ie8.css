@@ -1,6 +1,0 @@
-.popup-container {
-	display: none;
-}
-.popup-container.active {
-	display: block;
-}
