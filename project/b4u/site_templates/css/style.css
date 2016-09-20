@@ -1091,7 +1091,7 @@ h1 {
   background: red; }
 
 .dev {
-  margin-top: 10px; }
+  margin-top: -5px; }
 
 .support {
   font-size: 13px !important;
@@ -1739,9 +1739,12 @@ $font-bold: 700;
   font-family: 'roboto_medium' !important;
   font-weight: normal !important; }
 
-.font-bold, .tooltip_btn, .fine_icon, .sbOptions .sbGroup, .logo .logo_text, .lang_link.active, .menu_link.active, .calc_result_date, .footer_menu_link.active, .step_menu_child.active .step_menu_link, .step_menu_child.complate .step_menu_link, .big_cart_headline, .credit_message_link, .pagination_link.active, .pagination_separator {
+.font-bold, .tooltip_btn, .fine_icon, .sbOptions .sbGroup, .logo .logo_text, .menu_link.active, .calc_result_date, .footer_menu_link.active, .step_menu_child.active .step_menu_link, .step_menu_child.complate .step_menu_link, .big_cart_headline, .credit_message_link, .pagination_link.active, .pagination_separator {
   font-family: 'robotoregular' !important;
   font-weight: normal !important; }
+
+.lang_link.active {
+  font-family: robotobold; }
 
 .font-italic {
   font-family: 'robotoitalic';
@@ -4145,7 +4148,8 @@ footer .social p {
 
 .devel {
   font-family: robotoregular !important;
-  text-align: right; }
+  text-align: left;
+  margin-left: 3px; }
 
 .devel a {
   text-decoration: none; }
@@ -4199,7 +4203,8 @@ footer .social p {
   color: #0eab63; }
 
 .social_list {
-  list-style-type: none; }
+  list-style-type: none;
+  text-align: left !important; }
 
 .social_child {
   display: inline-block;
@@ -4310,7 +4315,7 @@ footer .social p {
 
 /*new*/
 .devel {
-  text-align: right; }
+  text-align: left; }
 
 .footer_menu_child {
   padding-bottom: 4px;
