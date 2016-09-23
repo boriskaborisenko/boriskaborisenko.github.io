@@ -78,6 +78,8 @@ var playermin;
 			$('.center_hello').html($('.time').html());
 			$('.mob_logo').html($('.logo').html());
 			
+			$('.nlo_logo_mob').html($('.nlo_logo').html());
+			
 			
 			
 			$(".scroll_down_mob").click(function() {
