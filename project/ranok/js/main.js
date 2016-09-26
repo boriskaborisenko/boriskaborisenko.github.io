@@ -68,6 +68,7 @@ var playermin;
 			$('#people_mob_title').html($('#people_desc_title').html());
 			$('#about_mob_title').html($('#about_desc_title').html());
 			$('.big_anno_mob').html($('.big_anno').html());
+			$('.follow_block_mob').html($('.follow_block').html());
 			$('.item:eq(0)').clone().appendTo('.one_mob:eq(0)');
 			$('.item:eq(1)').clone().appendTo('.one_mob:eq(1)');
 			$('.item:eq(2)').clone().appendTo('.one_mob:eq(2)');
