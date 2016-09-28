@@ -1,3 +1,17 @@
+lastvideo = $('#last_video').html();
+$('#last_video').remove();
+	
+w = $(window).width();
+if(w<1000){
+ playW = w;
+ playH = w/1.82;	
+}else{
+ playW = 640;
+ playH = 360;
+}
+
+console.log(lastvideo);
+console.log(playW, playH);
 		
 	   ////video 27ixLv3Lw1M
 
@@ -12,23 +26,41 @@ var playermin;
   	
   	
   	
-	window.addEventListener("resize", resFunc);
-	function resFunc(){
-	w = $(window).width();
-	console.log('res: '+w);
-	}	
-	
-	
-	w = $(window).width();	
 		
-		console.log(w);
+	
+	
 		if (w > 999){
 		
-		  $('.trans').click(function(){
+		  $('.box_1, .box_3').click(function(){
 			if($(this).hasClass('full')){
+				
+			 	
   			
 			}else{
   			$(this).addClass('full');
+  			
+			  $('.cross').removeClass('animated '+closeFull);
+			  setTimeout(function(){
+  			  $('.cross').addClass('animated '+openFull);
+			  }, 400);
+			  
+			  $('.trans>.small').toggleClass('off');
+			  setTimeout(function(){
+  			  $('.trans>.big').toggleClass('off animated slideInUp');
+			  },710);
+			}
+		});
+		
+		
+		 $('.box_2').click(function(){
+			if($(this).hasClass('full')){
+				
+			 	
+  			
+			}else{
+  			$(this).addClass('full');
+  			  $('#for_iframe').append('<iframe width="'+playW+'" height="'+playH+'" src="'+lastvideo+'" frameborder="0"></iframe>');
+			  
 			  $('.cross').removeClass('animated '+closeFull);
 			  setTimeout(function(){
   			  $('.cross').addClass('animated '+openFull);
@@ -48,7 +80,7 @@ var playermin;
   		$(this).removeClass(openFull).addClass(closeFull);
   		
   		setTimeout(function(){
-	  		player.stopVideo();
+	  		$('#for_iframe').empty();
   			$('.trans').removeClass('full');
   			$('.trans>.small').toggleClass('off');
 			  $('.trans>.big').toggleClass('off animated slideInUp');
@@ -80,6 +112,8 @@ var playermin;
 			$('.mob_logo').html($('.logo').html());
 			
 			$('.nlo_logo_mob').html($('.nlo_logo').html());
+			
+			 $('#playermob').append('<iframe width="'+playW+'" height="'+playH+'" src="'+lastvideo+'" frameborder="0"></iframe>');
 			
 			
 			
@@ -130,7 +164,7 @@ $(window).load(function() {
 
 
 
-
+/*
 function onYouTubeIframeAPIReady() {
 	if(w<1000){
 		playermin = new YT.Player('playermin', {
@@ -173,6 +207,8 @@ function onYouTubeIframeAPIReady() {
 function initialize(){
 }
 ////video end
+*/
+
 
 var outerIcon = 'zoomIn';
 var innerIcon = 'rotateIn';
@@ -192,3 +228,11 @@ $('.box_3').hover(function(){
 	$('.third_icon').toggleClass('animated '+innerIcon);
 	$('.icon_shape_third').toggleClass('animated '+outerIcon);
 });
+
+
+
+// <iframe id="xxx" frameborder="0" height="400" src="http://nlotv.com/single/pageToolBar/embed-player/126123/" width="600"></iframe>
+
+
+
+
