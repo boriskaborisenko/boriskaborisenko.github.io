@@ -231,6 +231,11 @@ $('.box_3').hover(function(){
 
 
 
+
+$(document).ready(function(){
+	 $('#for_iframe').append('<iframe width="'+playW+'" height="'+playH+'" src="'+lastvideo+'" frameborder="0"></iframe>');
+	 $('#for_iframe').empty();
+});
 // <iframe id="xxx" frameborder="0" height="400" src="http://nlotv.com/single/pageToolBar/embed-player/126123/" width="600"></iframe>
 
 
