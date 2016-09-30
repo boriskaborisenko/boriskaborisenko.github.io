@@ -138,7 +138,7 @@ var changeImage = function(id, image){
 
 //Auto change Background Image over time
 $(window).load(function() {
-    var images = ['images/bgs/01-p.jpg', 'images/bgs/02-p.jpg'];
+    var images = ['images/bgs/01-p.jpg', 'images/bgs/02-p.jpg', 'images/bgs/03-p.jpg', 'images/bgs/04-p.jpg', 'images/bgs/05-p.jpg', 'images/bgs/06-p.jpg', 'images/bgs/07-p.jpg'];
     // Your pretty counter
     var i = 0;
     
